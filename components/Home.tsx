@@ -12,6 +12,7 @@ import {
   Database,
   Globe,
 } from "lucide-react";
+import About from "./About";
 
 const Index = () => {
   const projects = [
@@ -151,34 +152,8 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-background">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
-            About Me
-          </h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div className="animate-slide-in">
-              <img
-                src="/assets/vercel.svg"
-                alt="Profile"
-                width={400}
-                height={400}
-                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
-              />
-            </div>
-            <div className="space-y-6 animate-fade-in">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a passionate full-stack web developer focused on building
-                elegant, user-centric applications using modern tools.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                I enjoy turning ideas into robust, maintainable code and
-                shipping delightful user experiences.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+
+      < About />
 
       {/* Projects Section */}
       <section
@@ -281,10 +256,10 @@ const Index = () => {
               <div className="flex items-center justify-center gap-3 text-lg">
                 <Mail className="h-5 w-5 text-primary" />
                 <a
-                  href="mailto:jane@example.com"
+                  href="mailto:nkwadanora@gmail.com"
                   className="hover:text-primary transition-smooth"
                 >
-                  jane@example.com
+                  nkwadanora@gmail.com
                 </a>
               </div>
               <div className="flex items-center justify-center gap-3 text-lg">
@@ -295,7 +270,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-smooth"
                 >
-                  github.com/janedoe
+                  github.com/solonkonora
                 </a>
               </div>
               <div className="flex items-center justify-center gap-3 text-lg">
@@ -306,12 +281,12 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-smooth"
                 >
-                  linkedin.com/in/janedoe
+                  linkedin.com/in/nkwadanora
                 </a>
               </div>
             </div>
             <Button size="lg" className="mt-8 w-full shadow-elegant">
-              <a href="mailto:jane@example.com">Send Message</a>
+              <a href="mailto:nkwadanora@gmail.com">Send Message</a>
             </Button>
           </Card>
         </div>
@@ -320,7 +295,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-background border-t border-border py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>&copy; 2025 Jane Doe. Built with React & Tailwind CSS.</p>
+          <p>&copy; 2025 Nora Solonko. Built with React & Tailwind CSS.</p>
         </div>
       </footer>
     </div>
