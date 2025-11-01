@@ -13,6 +13,7 @@ import {
   Globe,
 } from "lucide-react";
 import About from "./About";
+import Projects from "./Projects";
 
 const Index = () => {
   const projects = [
@@ -151,53 +152,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
-
+      {/* About Section */}s
       < About />
 
       {/* Projects Section */}
-      <section
-        id="projects"
-        className="py-20 px-4 sm:px-6 lg:px-8 gradient-subtle"
-      >
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center animate-fade-in">
-            Featured Projects
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <Card
-                key={index}
-                className="p-6 hover:shadow-elegant transition-smooth hover:-translate-y-1 animate-scale-in border-accent"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <h3 className="text-2xl font-bold mb-3 text-primary">
-                  {project.title}
-                </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map((tech, i) => (
-                    <Badge key={i} variant="secondary">
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
-                <Button variant="outline" className="w-full group">
-                  <a
-                    href={project.link}
-                    className="flex items-center justify-center gap-2 w-full"
-                  >
-                    View Project
-                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-smooth" />
-                  </a>
-                </Button>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      < Projects />
 
       {/* Skills Section */}
       <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
