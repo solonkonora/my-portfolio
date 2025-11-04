@@ -67,12 +67,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Navigation */}
       <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-md z-50 border-b border-border shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <span className="text-xl font-bold text-primary">
-              Portfolio
+              My Profile
             </span>
             <div className="flex items-center gap-6">
               <div className="hidden md:flex gap-8">
@@ -112,7 +111,7 @@ const Index = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Hi, I'm{" "}
             <span className="text-primary">
-              Jane Doe
+              Nora Solonko
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -121,17 +120,17 @@ const Index = () => {
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button size="lg" className="shadow-elegant hover:opacity-90">
-              <a href="#contact">Get In Touch</a>
+              <a href="#Contact">Get In Touch</a>
             </Button>
             <Button size="lg" variant="outline" className="hover:bg-accent">
-              <a href="#projects" className="flex items-center gap-2">
+              <a href="#Projects" className="flex items-center gap-2">
                 View Projects <ExternalLink className="h-4 w-4" />
               </a>
             </Button>
           </div>
           <div className="flex gap-6 justify-center mt-8">
             <a
-              href="https://github.com"
+              href="https://github.com/solonkonora"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-primary transition-smooth"
@@ -139,7 +138,7 @@ const Index = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/nkwada-nora"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground hover:text-primary transition-smooth"
@@ -147,7 +146,7 @@ const Index = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a
-              href="mailto:jane@example.com"
+              href="mailto:nkwadanora@gmail.com"
               className="text-foreground hover:text-primary transition-smooth"
             >
               <Mail className="h-6 w-6" />
@@ -155,10 +154,10 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* About Section */}s
+
       <About />
-      {/* Projects Section */}
       <Projects />
+
       {/* Skills Section */}
       <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="max-w-7xl mx-auto">
@@ -197,9 +196,9 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* Contact Section */}
+
       <Contact />
-      {/* Footer */}
+
       <footer className="bg-background border-t border-border py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
           <p>&copy; 2025 Nora Solonko. Built with React & Tailwind CSS.</p>
