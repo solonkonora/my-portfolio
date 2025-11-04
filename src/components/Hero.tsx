@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ThemeToggle } from "@/components/theme-toggle";
 import {
   Github,
   Linkedin,
@@ -12,9 +13,6 @@ import {
   Database,
   Globe,
 } from "lucide-react";
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
 
 const Index = () => {
   const projects = [
@@ -99,6 +97,7 @@ const Index = () => {
                 Contact
               </a>
             </div>
+            <ThemeToggle />
           </div>
         </div>
       </nav>
@@ -153,11 +152,79 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}s
-      < About />
+      {/* About Section */}
+      <section id="about" className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-foreground">
+            About Me
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="animate-slide-in">
+              <img
+                src="/assets/vercel.svg"
+                alt="Profile"
+                width={400}
+                height={400}
+                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
+              />
+            </div>
+            <div className="space-y-6 animate-fade-in">
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                I'm a passionate full-stack web developer focused on building
+                elegant, user-centric applications using modern tools.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                I enjoy turning ideas into robust, maintainable code and
+                shipping delightful user experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Projects Section */}
-      < Projects />
+      <section
+        id="projects"
+        className="py-20 px-4 sm:px-6 lg:px-8 gradient-subtle"
+      >
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center animate-fade-in">
+            Featured Projects
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <Card
+                key={index}
+                className="p-6 hover:shadow-elegant transition-smooth hover:-translate-y-1 animate-scale-in border-accent"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <h3 className="text-2xl font-bold mb-3 text-primary">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.tech.map((tech, i) => (
+                    <Badge key={i} variant="secondary">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+                <Button variant="outline" className="w-full group">
+                  <a
+                    href={project.link}
+                    className="flex items-center justify-center gap-2 w-full"
+                  >
+                    View Project
+                    <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-smooth" />
+                  </a>
+                </Button>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Skills Section */}
       <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
@@ -199,12 +266,63 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      < Contact /> 
+      <section
+        id="contact"
+        className="py-20 px-4 sm:px-6 lg:px-8 gradient-subtle"
+      >
+        <div className="max-w-2xl mx-auto text-center animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            Let's Work Together
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your vision.
+          </p>
+          <Card className="p-8 shadow-elegant border-accent">
+            <div className="space-y-4">
+              <div className="flex items-center justify-center gap-3 text-lg">
+                <Mail className="h-5 w-5 text-primary" />
+                <a
+                  href="mailto:jane@example.com"
+                  className="hover:text-primary transition-smooth"
+                >
+                  jane@example.com
+                </a>
+              </div>
+              <div className="flex items-center justify-center gap-3 text-lg">
+                <Github className="h-5 w-5 text-primary" />
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-smooth"
+                >
+                  github.com/janedoe
+                </a>
+              </div>
+              <div className="flex items-center justify-center gap-3 text-lg">
+                <Linkedin className="h-5 w-5 text-primary" />
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-smooth"
+                >
+                  linkedin.com/in/janedoe
+                </a>
+              </div>
+            </div>
+            <Button size="lg" className="mt-8 w-full shadow-elegant">
+              <a href="mailto:jane@example.com">Send Message</a>
+            </Button>
+          </Card>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-background border-t border-border py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
-          <p>&copy; 2025 Nora Solonko. Built with React & Tailwind CSS.</p>
+          <p>&copy; 2025 Jane Doe. Built with React & Tailwind CSS.</p>
         </div>
       </footer>
     </div>

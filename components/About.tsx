@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Code2, Palette, Zap } from "lucide-react";
 
 const About = () => {
