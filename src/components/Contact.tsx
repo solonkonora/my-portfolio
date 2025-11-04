@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Mail, Github, Linkedin, MapPin } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/src/components/ui/button";
 
 const Contact = () => {
   const contactInfo = [

@@ -1,43 +1,232 @@
 @import "tailwindcss";
 
+/* 
+  🎨 Light Mode Color Palette:
+  - Primary: Teal #009688
+  - Blush Pink: #FADADD
+  - Warm Beige: #F5E6CC
+  - Off-White: #FAFAFA (main background)
+  - Deep Navy: #1A1A40 (text)
+  
+  🌙 Dark Mode Color Palette:
+  - Primary: Teal #009688
+  - Muted Rose: #D4A5A5
+  - Mocha Taupe: #3E3B32
+  - Charcoal Gray: #121212 (main background)
+  - Soft Lavender Gray: #C7C9E2 (text)
+  - Interactive: Aqua Glow #20C997, Soft Mint #98FF98
+*/
+
 @theme {
-  --color-background: oklch(100% 0 0);
-  --color-foreground: oklch(9% 0 0);
-  --color-card: oklch(100% 0 0);
-  --color-card-foreground: oklch(9% 0 0);
-  --color-primary: oklch(65% 0.15 180);
+  /* Primary - Teal #009688 */
+  --color-primary: oklch(51.8% 0.13 192);
   --color-primary-foreground: oklch(100% 0 0);
-  --color-secondary: oklch(96% 0 0);
-  --color-secondary-foreground: oklch(9% 0 0);
-  --color-muted: oklch(96% 0 0);
-  --color-muted-foreground: oklch(45% 0 0);
-  --color-accent: oklch(92% 0.08 180);
-  --color-accent-foreground: oklch(9% 0 0);
-  --color-destructive: oklch(60% 0.2 29);
+  
+  /* Background - Off-White #FAFAFA */
+  --color-background: oklch(98.5% 0 0);
+  
+  /* Foreground/Text - Deep Navy #1A1A40 */
+  --color-foreground: oklch(15% 0.08 264);
+  
+  /* Card - Pure White for content */
+  --color-card: oklch(100% 0 0);
+  --color-card-foreground: oklch(15% 0.08 264);
+  
+  /* Secondary - Blush Pink #FADADD */
+  --color-secondary: oklch(92% 0.05 10);
+  --color-secondary-foreground: oklch(15% 0.08 264);
+  
+  /* Accent - Warm Beige #F5E6CC */
+  --color-accent: oklch(93% 0.05 75);
+  --color-accent-foreground: oklch(15% 0.08 264);
+  
+  /* Muted - Warm Beige for subtle backgrounds */
+  --color-muted: oklch(93% 0.05 75);
+  --color-muted-foreground: oklch(40% 0.05 264);
+  
+  /* Borders - Subtle gray */
+  --color-border: oklch(88% 0.01 264);
+  --color-input: oklch(88% 0.01 264);
+  
+  /* Focus Ring - Teal */
+  --color-ring: oklch(51.8% 0.13 192);
+  
+  /* Hover/Interactive - Aqua Glow #20C997 */
+  --color-interactive: oklch(72% 0.14 166);
+  --color-interactive-hover: oklch(68% 0.16 166);
+  
+  /* Destructive */
+  --color-destructive: oklch(55% 0.22 29);
   --color-destructive-foreground: oklch(98% 0 0);
-  --color-border: oklch(90% 0 0);
-  --color-input: oklch(90% 0 0);
-  --color-ring: oklch(65% 0.15 180);
 }
 
 .dark {
   @theme {
-    --color-background: oklch(10% 0 0);
-    --color-foreground: oklch(98% 0 0);
-    --color-card: oklch(15% 0 0);
-    --color-card-foreground: oklch(98% 0 0);
-    --color-primary: oklch(70% 0.15 180);
-    --color-primary-foreground: oklch(9% 0 0);
-    --color-secondary: oklch(20% 0 0);
-    --color-secondary-foreground: oklch(98% 0 0);
-    --color-muted: oklch(20% 0 0);
-    --color-muted-foreground: oklch(64% 0 0);
-    --color-accent: oklch(25% 0.08 180);
-    --color-accent-foreground: oklch(98% 0 0);
-    --color-destructive: oklch(40% 0.2 29);
+    /* Primary - Teal #009688 (unchanged) */
+    --color-primary: oklch(51.8% 0.13 192);
+    --color-primary-foreground: oklch(100% 0 0);
+    
+    /* Background - Charcoal Gray #121212 */
+    --color-background: oklch(10.5% 0 0);
+    
+    /* Foreground/Text - Soft Lavender Gray #C7C9E2 */
+    --color-foreground: oklch(82% 0.04 276);
+    
+    /* Card - Slightly lighter than background */
+    --color-card: oklch(16% 0 0);
+    --color-card-foreground: oklch(82% 0.04 276);
+    
+    /* Secondary - Muted Rose #D4A5A5 */
+    --color-secondary: oklch(72% 0.05 15);
+    --color-secondary-foreground: oklch(10.5% 0 0);
+    
+    /* Accent - Mocha Taupe #3E3B32 */
+    --color-accent: oklch(26% 0.02 60);
+    --color-accent-foreground: oklch(82% 0.04 276);
+    
+    /* Muted - Mocha Taupe for dividers */
+    --color-muted: oklch(26% 0.02 60);
+    --color-muted-foreground: oklch(65% 0.03 276);
+    
+    /* Borders - Subtle dark gray */
+    --color-border: oklch(22% 0.01 276);
+    --color-input: oklch(22% 0.01 276);
+    
+    /* Focus Ring - Teal */
+    --color-ring: oklch(51.8% 0.13 192);
+    
+    /* Hover/Interactive - Soft Mint #98FF98 for dark mode */
+    --color-interactive: oklch(92% 0.15 142);
+    --color-interactive-hover: oklch(88% 0.17 142);
+    
+    /* Destructive */
+    --color-destructive: oklch(45% 0.22 29);
     --color-destructive-foreground: oklch(98% 0 0);
-    --color-border: oklch(25% 0 0);
-    --color-input: oklch(25% 0 0);
-    --color-ring: oklch(70% 0.15 180);
   }
+}
+
+/* Smooth theme transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+/* Custom utilities */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gradient-subtle {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 150, 136, 0.08), transparent 60%);
+}
+
+.dark .gradient-subtle {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 150, 136, 0.15), transparent 60%);
+}
+
+.shadow-elegant {
+  box-shadow: 0 4px 20px -2px rgba(0, 150, 136, 0.15);
+}
+
+.dark .shadow-elegant {
+  box-shadow: 0 4px 20px -2px rgba(0, 150, 136, 0.25), 0 0 40px -10px rgba(152, 255, 152, 0.1);
+}
+
+.shadow-soft {
+  box-shadow: 0 2px 8px rgba(26, 26, 64, 0.06);
+}
+
+.dark .shadow-soft {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-medium {
+  box-shadow: 0 4px 12px rgba(26, 26, 64, 0.1);
+}
+
+.dark .shadow-medium {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-large {
+  box-shadow: 0 8px 24px rgba(26, 26, 64, 0.12);
+}
+
+.dark .shadow-large {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Interactive hover states */
+.hover-teal {
+  transition: all 0.3s ease;
+}
+
+.hover-teal:hover {
+  color: oklch(51.8% 0.13 192);
+}
+
+.dark .hover-teal:hover {
+  color: oklch(92% 0.15 142);
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.5s ease-out;
 }

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Button } from "@/src/components/ui/button";
+import { Card } from "@/src/components/ui/card";
+import { Badge } from "@/src/components/ui/badge";
 import {
   Github,
   Linkedin,
@@ -15,6 +15,7 @@ import {
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import { ThemeToggle } from "./theme-toggle";
 
 const Index = () => {
   const projects = [
@@ -67,48 +68,50 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b border-border">
+      <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-md z-50 border-b border-border shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <span className="text-xl font-bold gradient-primary bg-clip-text text-transparent">
+            <span className="text-xl font-bold text-primary">
               Portfolio
             </span>
-            <div className="hidden md:flex gap-8">
-              <a
-                href="#about"
-                className="text-foreground hover:text-primary transition-smooth"
-              >
-                About
-              </a>
-              <a
-                href="#projects"
-                className="text-foreground hover:text-primary transition-smooth"
-              >
-                Projects
-              </a>
-              <a
-                href="#skills"
-                className="text-foreground hover:text-primary transition-smooth"
-              >
-                Skills
-              </a>
-              <a
-                href="#contact"
-                className="text-foreground hover:text-primary transition-smooth"
-              >
-                Contact
-              </a>
+            <div className="flex items-center gap-6">
+              <div className="hidden md:flex gap-8">
+                <a
+                  href="#about"
+                  className="text-foreground hover:text-primary transition-smooth"
+                >
+                  About
+                </a>
+                <a
+                  href="#projects"
+                  className="text-foreground hover:text-primary transition-smooth"
+                >
+                  Projects
+                </a>
+                <a
+                  href="#skills"
+                  className="text-foreground hover:text-primary transition-smooth"
+                >
+                  Skills
+                </a>
+                <a
+                  href="#contact"
+                  className="text-foreground hover:text-primary transition-smooth"
+                >
+                  Contact
+                </a>
+              </div>
+              <ThemeToggle />
             </div>
           </div>
         </div>
       </nav>
-
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-16 gradient-subtle">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Hi, I'm{" "}
-            <span className="gradient-primary bg-clip-text text-transparent">
+            <span className="text-primary">
               Jane Doe
             </span>
           </h1>
@@ -117,10 +120,10 @@ const Index = () => {
             user-centered digital experiences
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <Button size="lg" className="shadow-elegant">
+            <Button size="lg" className="shadow-elegant hover:opacity-90">
               <a href="#contact">Get In Touch</a>
             </Button>
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="outline" className="hover:bg-accent">
               <a href="#projects" className="flex items-center gap-2">
                 View Projects <ExternalLink className="h-4 w-4" />
               </a>
@@ -152,13 +155,10 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       {/* About Section */}s
-      < About />
-
+      <About />
       {/* Projects Section */}
-      < Projects />
-
+      <Projects />
       {/* Skills Section */}
       <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="max-w-7xl mx-auto">
@@ -197,10 +197,8 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       {/* Contact Section */}
-      < Contact /> 
-
+      <Contact />
       {/* Footer */}
       <footer className="bg-background border-t border-border py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center text-muted-foreground">
