@@ -7,25 +7,25 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@developer.com",
-      link: "mailto:hello@developer.com"
+      value: "nkwadanora@gmail.com",
+      link: "mailto:nkwadanora@gmail.com"
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/developer",
-      link: "https://github.com"
+      value: "github.com/solonkonora",
+      link: "https://github.com/solonkonora"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/developer",
-      link: "https://linkedin.com"
+      value: "linkedin.com/in/nkwada-nora",
+      link: "https://linkedin.com/in/nkwada-nora"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Remote / Worldwide",
+      value: "Remote / Yaounde, Cameroon",
       link: null
     }
   ];
@@ -37,7 +37,7 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Connect</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            I'm always interested in hearing about new projects and opportunities.
+            I'm always interested in hearing and working on new projects and opportunities.
             Feel free to reach out!
           </p>
         </div>
@@ -90,7 +90,7 @@ const Contact = () => {
               className="shadow-teal hover:shadow-large transition-all duration-300"
               asChild
             >
-              <a href="mailto:hello@developer.com">
+              <a href="mailto:nkwadanora@gmail.com">
                 Send a Message
               </a>
             </Button>
