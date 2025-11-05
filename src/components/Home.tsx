@@ -106,7 +106,20 @@ const Index = () => {
         </div>
       </nav>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center pt-16 gradient-subtle">
+      <section className="relative min-h-screen flex items-center justify-center pt-16">
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: 'url(/assets/hero1.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          {/* overlay for better text readability */}
+          <div className="absolute inset-0 bg-background/70 dark:bg-background/80 backdrop-blur-sm"></div>
+        </div>
+        
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Hi, I'm{" "}

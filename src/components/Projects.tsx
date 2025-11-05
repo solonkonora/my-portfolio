@@ -4,7 +4,15 @@ import { Button } from "@/src/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "My-Profile App",
+      description: "Analytics dashboard for social media management with data visualization, scheduling tools, and multi-platform integration.",
+      image: "/assets/vercel.svg",
+      tags: ["React.js", "Express", "Redis", "Chart.js"],
+      demoLink: "#",
+      githubLink: "#"
+    },
+    {
+      title: "Event Planning",
       description: "A full-featured e-commerce solution with real-time inventory management, secure payment processing, and an intuitive admin dashboard.",
       image: "/assets/fem.png",
       tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
@@ -12,7 +20,7 @@ const Projects = () => {
       githubLink: "#"
     },
     {
-      title: "Task Management App",
+      title: "Visual Brainstorm Canvas Board",
       description: "Collaborative task management tool with drag-and-drop functionality, real-time updates, and team collaboration features.",
       image: "/assets/vercel.svg",
       tags: ["TypeScript", "Next.js", "MongoDB", "Socket.io"],
@@ -20,7 +28,7 @@ const Projects = () => {
       githubLink: "#"
     },
     {
-      title: "Social Media Dashboard",
+      title: "Touristic Site",
       description: "Analytics dashboard for social media management with data visualization, scheduling tools, and multi-platform integration.",
       image: "/assets/vercel.svg",
       tags: ["Vue.js", "Express", "Redis", "Chart.js"],
