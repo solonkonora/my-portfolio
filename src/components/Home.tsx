@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Button } from "@/src/components/ui/button";
 import { Card } from "@/src/components/ui/card";
-import { Badge } from "@/src/components/ui/badge";
 import {
   Github,
   Linkedin,
@@ -18,50 +17,57 @@ import Contact from "./Contact";
 import { ThemeToggle } from "./theme-toggle";
 
 const Index = () => {
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description:
-        "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      link: "#",
-    },
-    {
-      title: "Task Management App",
-      description:
-        "Collaborative task management tool with real-time updates, team collaboration features, and analytics.",
-      tech: ["React", "TypeScript", "Firebase", "Tailwind"],
-      link: "#",
-    },
-    {
-      title: "Portfolio CMS",
-      description:
-        "Content management system for creative professionals with drag-and-drop builder and SEO optimization.",
-      tech: ["Next.js", "Prisma", "PostgreSQL", "AWS"],
-      link: "#",
-    },
-  ];
-
   const skills = [
+    {
+      category: "Languages",
+      icon: Globe,
+      items: ["HTML", "CSS", "JavaScript", "TypeScript"],
+    },
     {
       category: "Frontend",
       icon: Palette,
-      items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js"],
+      items: [
+        "React",
+        "TypeScript",
+        "Next.js",
+        "Tailwind CSS",
+        "React Context API",
+      ],
     },
     {
       category: "Backend",
       icon: Database,
-      items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "REST APIs"],
+      items: [
+        "Node.js",
+        "Express.js",
+        "Nest.JS",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "REST APIs",
+        "WebSockets",
+      ],
     },
     {
       category: "Tools",
       icon: Code2,
-      items: ["Git", "Docker", "AWS", "Vercel", "Figma"],
-    },
-    {
-      category: "Languages",
-      icon: Globe,
-      items: ["JavaScript", "TypeScript", "Python", "SQL", "HTML/CSS"],
+      items: [
+        "Git",
+        "GitHub",
+        "Docker",
+        "GCP",
+        "Vercel",
+        "Render",
+        "Figma",
+        "Postman",
+        "ESLint",
+        "Prettier",
+        "Trello",
+        "Swagger",
+        "Vite",
+        "npm",
+        "pnpm",
+      ],
     },
   ];
 
@@ -70,9 +76,7 @@ const Index = () => {
       <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-md z-50 border-b border-border shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <span className="text-xl font-bold text-primary">
-              My Profile
-            </span>
+            <span className="text-xl font-bold text-primary">My Profile</span>
             <div className="flex items-center gap-6">
               <div className="hidden md:flex gap-8">
                 <a
@@ -107,25 +111,23 @@ const Index = () => {
       </nav>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-16">
-        <div 
+        <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url(/assets/hero1.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
+            backgroundImage: "url(/assets/hero1.jpg)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         >
           {/* overlay for better text readability */}
-          <div className="absolute inset-0 bg-background/70 dark:bg-background/80 backdrop-blur-sm"></div>
+          <div className="absolute inset-0 bg-background/80 dark:bg-background/50 "></div>
         </div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Hi, I'm{" "}
-            <span className="text-primary">
-              Nora Solonko
-            </span>
+            <span className="text-white">Hi, I'm</span>
+            <span className="text-primary">Nora Solonko</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             Full-Stack Web Developer crafting beautiful, functional, and

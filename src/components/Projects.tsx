@@ -4,10 +4,18 @@ import { Button } from "@/src/components/ui/button";
 const Projects = () => {
   const projects = [
     {
+      title: "Touristic Site",
+      description: "A stunning coastal discovery platform showcasing breathtaking sea views, thrilling adventure activities, and curated sightseeing experiences with interactive maps and location guides.",
+      image: "/assets/vercel.svg",
+      tags: ["JavaScript", "TypeScript", "Tailwind CSS", "Vite"],
+      demoLink: "https://my-touristic-site.vercel.app/",
+      githubLink: "https://github.com/solonkonora/my-touristic-site"
+    },
+    {
       title: "My-Profile App",
       description: "Analytics dashboard for social media management with data visualization, scheduling tools, and multi-platform integration.",
       image: "/assets/vercel.svg",
-      tags: ["React.js", "Express", "Redis", "Chart.js"],
+      tags: ["React.js", "TypeScript", "Nextjs"],
       demoLink: "#",
       githubLink: "#"
     },
@@ -15,23 +23,15 @@ const Projects = () => {
       title: "Event Planning",
       description: "A full-featured e-commerce solution with real-time inventory management, secure payment processing, and an intuitive admin dashboard.",
       image: "/assets/fem.png",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
+      tags: ["Nextjs", "TypeScript", "Supabase", "MongoDB"],
       demoLink: "#",
       githubLink: "#"
     },
     {
       title: "Visual Brainstorm Canvas Board",
-      description: "Collaborative task management tool with drag-and-drop functionality, real-time updates, and team collaboration features.",
+      description: "Collaborative visual management tool with drawing functionality, real-time updates, and team collaboration features.",
       image: "/assets/vercel.svg",
-      tags: ["TypeScript", "Next.js", "MongoDB", "Socket.io"],
-      demoLink: "#",
-      githubLink: "#"
-    },
-    {
-      title: "Touristic Site",
-      description: "Analytics dashboard for social media management with data visualization, scheduling tools, and multi-platform integration.",
-      image: "/assets/vercel.svg",
-      tags: ["Vue.js", "Express", "Redis", "Chart.js"],
+      tags: ["TypeScript", "Next.js", "NestJS", "MongoDB", "Socket.io", "ReactKonva"],
       demoLink: "#",
       githubLink: "#"
     }
