@@ -16,7 +16,7 @@ const Projects = () => {
       description: "Analytics dashboard for social media management with data visualization, scheduling tools, and multi-platform integration.",
       image: "/assets/vercel.svg",
       tags: ["TypeScript", "JavaScript"],
-      demoLink: "#",
+      demoLink: "https://my-portfolio-bx610cvig-norasolonkos-projects.vercel.app/",
       githubLink: "https://github.com/solonkonora/my-portfolio"
     },
     {
