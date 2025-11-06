@@ -15,9 +15,9 @@ const Projects = () => {
       title: "My-Profile App",
       description: "Analytics dashboard for social media management with data visualization, scheduling tools, and multi-platform integration.",
       image: "/assets/vercel.svg",
-      tags: ["React.js", "TypeScript", "Nextjs"],
+      tags: ["TypeScript", "JavaScript"],
       demoLink: "#",
-      githubLink: "#"
+      githubLink: "https://github.com/solonkonora/my-portfolio"
     },
     {
       title: "Event Planning",
