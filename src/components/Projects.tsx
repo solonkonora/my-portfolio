@@ -24,8 +24,8 @@ const Projects = () => {
       description: "A full-featured e-commerce solution with real-time inventory management, secure payment processing, and an intuitive admin dashboard.",
       image: "/assets/fem.png",
       tags: ["Nextjs", "TypeScript", "Supabase", "MongoDB"],
-      demoLink: "#",
-      githubLink: "#"
+      demoLink: "https://diligent-events.vercel.app/",
+      githubLink: "https://github.com/solonkonora/diligent-events"
     },
     {
       title: "Visual Brainstorm Canvas Board",
