@@ -123,7 +123,7 @@
 }
 
 .dark .about-text {
-  color: #ffffff !important; /* white for dark mode with !important */
+  color: #ffffff !important;
 }
 
 .gradient-subtle {

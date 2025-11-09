@@ -42,7 +42,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 mb-12">
+        <div className="grid sm:grid-cols-2 gap-6 mb-12 text-foreground">
           {contactInfo.map((info, index) => (
             <div 
               key={index}
@@ -80,7 +80,7 @@ const Contact = () => {
         </div>
 
         <div className="text-center animate-fade-in-up">
-          <div className="bg-gradient-to-r from-primary/10 via-accent to-primary/10 p-8 rounded-2xl">
+          <div className="bg-gradient-to-r from-primary via-accent to-primary p-8 rounded-2xl">
             <h3 className="text-2xl font-semibold mb-4">Ready to Start a Project?</h3>
             <p className="text-muted-foreground mb-6">
               Let's collaborate and build something amazing together.

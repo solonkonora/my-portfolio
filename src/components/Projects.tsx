@@ -30,7 +30,7 @@ const Projects = () => {
     {
       title: "Visual Brainstorm Canvas Board",
       description: "Collaborative visual management tool with drawing functionality, real-time updates, and team collaboration features.",
-      image: "/assets/vercel.svg",
+      image: "/assets/profi.png",
       tags: ["TypeScript", "Next.js", "NestJS", "MongoDB", "Socket.io", "ReactKonva"],
       demoLink: "#",
       githubLink: "#"
@@ -83,7 +83,7 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="flex gap-3">
+                <div className="flex gap-3 text-foreground">
                   <Button 
                     variant="outline" 
                     size="sm"
@@ -91,7 +91,7 @@ const Projects = () => {
                     asChild
                   >
                     <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-4 h-4" />
+                      <ExternalLink className="w-4 h-4 text-foreground" />
                       Demo
                     </a>
                   </Button>
@@ -102,7 +102,7 @@ const Projects = () => {
                     asChild
                   >
                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4" />
+                      <Github className="w-4 h-4 text-foreground" />
                       Code
                     </a>
                   </Button>
