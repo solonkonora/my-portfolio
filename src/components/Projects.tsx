@@ -6,7 +6,7 @@ const Projects = () => {
     {
       title: "Touristic Site",
       description: "A stunning coastal discovery platform showcasing breathtaking sea views, thrilling adventure activities, and curated sightseeing experiences with interactive maps and location guides.",
-      image: "/assets/vercel.svg",
+      image: "/assets/tour.png",
       tags: ["JavaScript", "TypeScript", "Tailwind CSS", "Vite"],
       demoLink: "https://my-touristic-site.vercel.app/",
       githubLink: "https://github.com/solonkonora/my-touristic-site"
@@ -14,7 +14,7 @@ const Projects = () => {
     {
       title: "My-Profile App",
       description: "Analytics dashboard for social media management with data visualization, scheduling tools, and multi-platform integration.",
-      image: "/assets/vercel.svg",
+      image: "/assets/profi.png",
       tags: ["TypeScript", "JavaScript"],
       demoLink: "https://my-portfolio-bx610cvig-norasolonkos-projects.vercel.app/",
       githubLink: "https://github.com/solonkonora/my-portfolio"
@@ -22,7 +22,7 @@ const Projects = () => {
     {
       title: "Event Planning",
       description: "A full-featured e-commerce solution with real-time inventory management, secure payment processing, and an intuitive admin dashboard.",
-      image: "/assets/fem.png",
+      image: "/assets/ds.png",
       tags: ["Nextjs", "TypeScript", "Supabase", "MongoDB"],
       demoLink: "https://diligent-events.vercel.app/",
       githubLink: "https://github.com/solonkonora/diligent-events"

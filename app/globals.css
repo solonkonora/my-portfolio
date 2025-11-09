@@ -105,16 +105,25 @@
   }
 }
 
-/* Smooth theme transitions */
+/* Smooth theme transitions - only for backgrounds and borders, NOT text */
 * {
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-duration: 0.4s;
+  transition-property: background-color, border-color;
+  transition-duration: 0.3s;
   transition-timing-function: ease;
 }
 
 /* Custom utilities */
 .transition-smooth {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* About section text color fix */
+.about-text {
+  color: #1f2937; /* gray-800 for light mode */
+}
+
+.dark .about-text {
+  color: #ffffff !important; /* white for dark mode with !important */
 }
 
 .gradient-subtle {

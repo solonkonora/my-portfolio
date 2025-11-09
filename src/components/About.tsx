@@ -24,7 +24,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-6 bg-secondary/30">
+    <section id="about" className="py-20 px-6 bg-secondary/30 dark:bg-secondary/10">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
@@ -37,27 +37,27 @@ const About = () => {
               Software Developer
             </h3>
 
-            <p className="text-muted-foreground leading-relaxed mb-6">
+            <p className="leading-relaxed mb-6 text-base about-text">
               I'm a passionate full-stack web developer with a keen eye for
               design and a love for creating seamless digital experiences. With
               expertise spanning from frontend frameworks to backend systems, I
               build applications that are both beautiful and functional making
               use of modern technologies.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="mb-6 text-base about-text">
               My journey in tech began with a curiosity for solving real-world
               problems through innovative solutions, which evolved into a love
               for crafting user-centric digital experiences. With a strong
               foundation in JavaScript frameworks, I focus on creating scalable,
               efficient, and visually appealing applications.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="mb-6 text-base about-text">
               When I'm not coding, you'll find me exploring new technologies,
               contributing to open-source projects, or sharing knowledge with
               the developer community. I believe in continuous learning and the
               power of collaboration.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-base about-text">
               I aim to contribute to impactful projects that make a difference
               in users' lives.
             </p>
@@ -67,17 +67,17 @@ const About = () => {
             {highlights.map((highlight, index) => (
               <div
                 key={index}
-                className="bg-card p-6 rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 border border-border"
+                className="bg-white dark:bg-card p-6 rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 border border-border/50"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
+                  <div className="p-3 bg-primary/15 dark:bg-primary/10 rounded-lg">
                     <highlight.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="text-primary font-semibold text-lg mb-2">
                       {highlight.title}
                     </h4>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-100">
                       {highlight.description}
                     </p>
                   </div>
