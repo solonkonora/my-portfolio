@@ -25,28 +25,28 @@
   /* Background - Off-White #FAFAFA */
   --color-background: oklch(98.5% 0 0);
   
-  /* Foreground/Text - Deep Navy #1A1A40 */
-  --color-foreground: oklch(15% 0.08 264);
+  /* Foreground/Text - Deep Navy #1A1A40 - Made darker for better contrast */
+  --color-foreground: oklch(18% 0.08 264);
   
   /* Card - Pure White for content */
   --color-card: oklch(100% 0 0);
-  --color-card-foreground: oklch(15% 0.08 264);
+  --color-card-foreground: oklch(18% 0.08 264);
   
   /* Secondary - Blush Pink #FADADD */
   --color-secondary: oklch(92% 0.05 10);
-  --color-secondary-foreground: oklch(15% 0.08 264);
+  --color-secondary-foreground: oklch(18% 0.08 264);
   
   /* Accent - Warm Beige #F5E6CC */
   --color-accent: oklch(93% 0.05 75);
-  --color-accent-foreground: oklch(15% 0.08 264);
+  --color-accent-foreground: oklch(18% 0.08 264);
   
-  /* Muted - Warm Beige for subtle backgrounds */
-  --color-muted: oklch(93% 0.05 75);
-  --color-muted-foreground: oklch(40% 0.05 264);
+  /* Muted - Warmer tone for better visibility */
+  --color-muted: oklch(91% 0.03 75);
+  --color-muted-foreground: oklch(45% 0.06 264);
   
-  /* Borders - Subtle gray */
-  --color-border: oklch(88% 0.01 264);
-  --color-input: oklch(88% 0.01 264);
+  /* Borders - Stronger for better definition */
+  --color-border: oklch(85% 0.02 264);
+  --color-input: oklch(85% 0.02 264);
   
   /* Focus Ring - Teal */
   --color-ring: oklch(51.8% 0.13 192);

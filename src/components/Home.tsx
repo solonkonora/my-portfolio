@@ -121,15 +121,15 @@ const Index = () => {
           }}
         >
           {/* overlay for better text readability */}
-          <div className="absolute inset-0 bg-background/80 dark:bg-background/50 "></div>
+          <div className="absolute inset-0 bg-background/85 dark:bg-background/70 backdrop-blur-sm"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="text-white">Hi, I'm</span>
+            <span className="text-foreground">Hi, I'm </span>
             <span className="text-primary">Nora Solonko</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-foreground mb-8 max-w-3xl mx-auto font-medium">
             Full-Stack Web Developer crafting beautiful, functional, and
             user-centered digital experiences
           </p>
@@ -138,7 +138,7 @@ const Index = () => {
               <a href="#Contact">Get In Touch</a>
             </Button>
             <Button size="lg" variant="outline" className="hover:bg-accent">
-              <a href="#Projects" className="flex items-center gap-2">
+              <a href="#Projects" className="text-foreground flex items-center gap-2">
                 View Projects <ExternalLink className="h-4 w-4" />
               </a>
             </Button>
