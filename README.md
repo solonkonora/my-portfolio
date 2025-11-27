@@ -62,15 +62,6 @@ pnpm dev
 4. **Open in browser**
 Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 🛠️ Available Scripts
-
-```bash
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run start    # Start production server
-npm run lint     # Run ESLint
-```
-
 ## Color Palette
 
 ### Light Mode
@@ -88,91 +79,12 @@ npm run lint     # Run ESLint
 ### Interactive Elements
 - **Hover/Focus**: Aqua Glow `#20C997` | Soft Mint `#98FF98`
 
-## Project Structure
-
-```
-my-portfolio/
-├── app/
-│   ├── globals.css          # Global styles & Tailwind config
-│   ├── layout.tsx           # Root layout with ThemeProvider
-│   └── page.tsx             # Home page
-├── src/
-│   └── components/
-│       ├── ui/              # shadcn/ui components
-│       │   ├── button.tsx
-│       │   ├── card.tsx
-│       │   └── badge.tsx
-│       ├── About.tsx        # About section
-│       ├── Contact.tsx      # Contact section
-│       ├── Home.tsx         # Main hero section
-│       ├── Projects.tsx     # Projects showcase
-│       ├── theme-provider.tsx
-│       └── theme-toggle.tsx # Dark/light mode toggle
-├── lib/
-│   └── utils.ts            # Utility functions
-├── public/
-│   └── assets/             # Images and static files
-└── package.json
-```
-
-## Sections
-
-1. **Hero Section** - Eye-catching introduction with background image
-2. **About** - Personal introduction and highlights
-3. **Projects** - Featured work with live demos and GitHub links
-4. **Skills** - Technical expertise organized by category
-5. **Contact** - Get in touch via email and social media
-
-## Deployment
-
-### Deploy to Vercel (Recommended)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/solonkonora/my-portfolio)
-
-1. Push your code to GitHub
-2. Import your repository to [Vercel](https://vercel.com)
-3. Vercel will automatically detect Next.js and configure the build
-4. Your site will be live in seconds!
-
-### Deploy to Netlify
-
-1. Build the project: `npm run build`
-2. Deploy the `.next` folder to Netlify
-3. Configure build command: `npm run build`
-4. Configure publish directory: `.next`
-
-## Customization
-
-### Update Personal Information
-
-Edit the following files:
-- `src/components/Home.tsx` - Name, title, hero content
-- `src/components/About.tsx` - About section content
-- `src/components/Projects.tsx` - Your projects
-- `src/components/Contact.tsx` - Contact information
-
-### Change Colors
-
-Edit `app/globals.css` to customize the color palette:
-```css
-@theme {
-  --color-primary: oklch(65% 0.15 180);
-}
-
-### Add New Components
-
-Use shadcn/ui CLI to add components:
-```bash
-npx shadcn@latest add [component-name]
-```
-
 ## License
-
 This project is open source and available under the [MIT License](LICENSE).
 
 ## Author
 
-**Nora Solonko**
+**Nkwada Nora Solonko**
 
 - GitHub: [@solonkonora](https://github.com/solonkonora)
 - Portfolio: [Your Portfolio URL]
